@@ -1,30 +1,24 @@
 public class Weapon {
-    private String WeaponType;
-    private String WeaponName;
-
-    public Weapon(String WeaponName, String WeaponType) {
-        this.WeaponType = WeaponType;
-        this.WeaponName = WeaponName;
-    }
-
-    public String getWeaponType() {
-        return WeaponType;
-    }
-
-    public Weapon setWeaponType(String WeaponType) {
-        this.WeaponType = WeaponType;
-        return null;
-    }
+    private WeaponType weaponType;
+    private String weaponName;
 
     public String getWeaponName() {
-        return WeaponName;
+        return weaponName;
     }
 
-    public Weapon setWeaponName(String WeaponName) {
-        this.WeaponName = WeaponName;
-        return null;
-
-
+    public void setWeaponName(String weaponName) {
+        this.weaponName = weaponName;
     }
+
+    public WeaponType getWeaponType() {
+        return weaponType;
+    }
+
+    public void setWeaponType(WeaponType weaponType) {
+        this.weaponType = weaponType;
+    }
+
+
 }
+
 

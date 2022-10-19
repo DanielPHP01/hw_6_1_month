@@ -1,17 +1,17 @@
 public class Skeletons extends Boss {
 
-    private int arrows = 25;
+    int numberArrows;
 
-    public Skeletons(int health, int damage, Weapon weapon) {
-        super(health, damage, weapon);
+    public int getNumberArrows() {
+        return numberArrows;
     }
 
+    public void setNumberArrows(int numberArrows) {
+        this.numberArrows = numberArrows;
+    }
 
+    @Override
     public String printInfo() {
-        return super.printInfo() + getArrows();
-    }
-
-    public int getArrows() {
-        return arrows;
+        return super.printInfo()+" Number arrows:  "+ this.numberArrows;
     }
 }
